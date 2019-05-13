@@ -38,11 +38,18 @@ table, th, td {
     
 }
 
+/* The content of the today-container (weather about today only) */
 .weatherResults {
     flex: 1;
     
     text-align: center;
 }
+
+
+
+#hour3day5-header {
+    margin-top: 3rem;
+   }
 
 .content {
     
@@ -62,7 +69,41 @@ table, th, td {
     
 }
 
-@media only screen and (max-width: 750px) and (min-width: 251px) {
+@media only screen and (max-width: 1178px) and (min-width: 251px) {
+    .today-container {
+        min-width: 80%;
+        
+        
+    }
+    .weatherResults {
+        width: 80%;
+        
+    }
+
+    table, th, td {
+        z-index: 2;
+        border: 2px solid white;
+        padding: 0;
+        
+      }
+
+ 
+      #day5-container {
+        border-top: white 3px solid;
+        min-width: 100%;
+      }
+
+      table {
+        
+        margin: auto;
+      }
+        
+        
+       
+
+  }
+
+  /* @media only screen and (max-width: 770px) and (min-width: 251px) {
     .today-container {
         min-width: 80%;
         
@@ -79,8 +120,9 @@ table, th, td {
         padding: 0;
         margin-right: 0;
       }
+      
 
-  }
+  } */
 
   @media only screen and (max-width: 250px) {
     
@@ -98,6 +140,7 @@ table, th, td {
         
         padding: 0;
       }
+      
 
   }
 

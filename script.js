@@ -4,7 +4,7 @@
 window.onload = function () {
 
     document.getElementById("weatherSubmit").addEventListener("click", function(event) {
-      document.getElementById("weather-container").innerHTML = '<div class="today-container"><div id="weatherResults"></div></div> <div ><h2 style="text-align: center; margin-top: 2rem;">5-Day, 3-Hour Forecast</h2><table id="weather-table"><tr id="table-head" style="text-align:center"><th>Time</th><th >Date</th></tr><tr id="month-day"><td style="border: none; "></td></tr><tr id="time-temp"></tr></table></div>';
+      document.getElementById("weather-container").innerHTML = '<div class="today-container"><div id="weatherResults"></div></div> <div id="day5-container" ><h2 id="hour3day5-header" style="text-align: center">5-Day, 3-Hour Forecast</h2><table id="weather-table"><tr id="table-head" style="text-align:center"><th>Time</th><th >Date</th></tr><tr id="month-day"><td style="border: none; "></td></tr><tr id="time-temp"></tr></table></div>';
       var unsetTimes = new Set();
       let mornEvening = "am";
       for (let i = 0; i < 8; i++ ) {
